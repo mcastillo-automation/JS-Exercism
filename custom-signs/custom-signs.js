@@ -14,13 +14,7 @@
  */
 
 export function buildSign(occasion, name) {
-  switch (occasion) {
-    case `Birthday`:
-      return `Happy Birthday ${name}!`;      
-  
-    case `Anniversary`:
-      return `Happy Anniversary ${name}!`;      
-  }
+  return `Happy ${occasion} ${name}!`
 };
 
 /**
@@ -45,8 +39,7 @@ export function buildBirthdaySign(age) {
  */
 
 export function graduationFor(name, year) {
-  return `Congratulations ${name}!
-Class of ${year}`;
+  return `Congratulations ${name}!\nClass of ${year}`;
 }
 
 /**
